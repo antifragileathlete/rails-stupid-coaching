@@ -1,0 +1,14 @@
+<%= answer = @answer[:question] %>
+  <p><em>-You</em></p>
+<% if answer == 'I am going to work'%>
+  <p>Great!</p>
+  <p><em>-Your Coach</em></p>
+<% elsif answer.last == '?'  %>
+  <p>Silly question, get dressed and go to work</p>
+  <p><em>-Your Coach</em></p>
+<% else %>
+  <p>I don't care, get dressed and go to work!</p>
+  <p><em>-Your Coach</em></p>
+<% end %>
+<p><%= link_to "Ask another question", ask_path %></p>
+
